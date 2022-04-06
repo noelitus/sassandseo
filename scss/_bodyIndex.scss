@@ -1,0 +1,33 @@
+#episodios h3 {
+    @include texto(2.5rem, 700);
+}
+
+#main p {
+    text-align: justify;
+    font-family: $fontGeneral;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include texto(1.5rem, 400);
+}
+
+//Configuración del botón
+.btn-episodios {
+    background-color: map-get($map: $colores, $key: 'tres');
+    color: map-get($map: $colores, $key: 'siete');
+    @include texto(2rem, 600);
+    box-sizing: border-box;
+    &:hover {
+        background: linear-gradient(to top, map-get($map: $colores, $key: 'uno'), map-get($map: $colores, $key: 'tres'));
+        color: map-get($map: $colores, $key: 'siete');
+    }
+}
+
+#tituloForm {
+    @include texto(3rem, 500);
+    color: map-get($map: $colores, $key: 'cinco');
+}
+
+#tituloSecundario {
+    @include texto(3rem, 500);
+    color: map-get($map: $colores, $key: 'cinco');
+}

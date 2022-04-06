@@ -1,0 +1,25 @@
+#botonera {
+    background-color: map-get($map: $colores, $key: 'dos');
+    position: sticky;
+    top: 0;
+    font-size: $size2;
+    img {
+        width: $w-200;
+    }
+    ul {
+        li {
+            a {
+                background: linear-gradient(to top, map-get($map: $colores, $key: 'uno'), map-get($map: $colores, $key: 'uno'));
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:hover {
+                    font-weight: 600;
+                    color: map-get($map: $colores, $key: 'seis');
+                    background-size: 100% 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#contacto .label {
+    font-family: $fontTitulos;
+    @include texto (2rem, 600);
+    color: map-get($map: $colores, $key: 'cinco');
+}
+
+#contacto input {
+    @include texto (1.5rem, 500);
+}
+
+#contacto .opcion {
+    @include texto(1.5rem, 500);
+}
+
+.charla {
+    font-family: $fontTitulos;
+    @include texto (2rem, 600);
+}

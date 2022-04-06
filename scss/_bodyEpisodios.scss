@@ -1,0 +1,26 @@
+h4 {
+    font-family: $fontTitulos;
+    @include texto(2rem, 600);
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.tituloTabla {
+    font-family: $fontTitulos;
+    @include texto(2rem, 600);
+}
+
+.principal {
+    font-family: $fontTitulos;
+    @include texto(1.5rem, 600);
+}
+
+.episodios {
+    @extend .principal;
+    color: map-get($map: $colores, $key: 'cinco');
+}
+
+.btn-secundario {
+    @extend .btn-episodios;
+    margin-bottom: 15px;
+}

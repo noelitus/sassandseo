@@ -1,0 +1,28 @@
+h2,
+h3 {
+    font-family: $fontTitulos;
+    color: map-get($map: $colores, $key: 'tres');
+}
+
+#titulo {
+    font-family: $fontTitulos;
+    @include texto (5rem, 800);
+    color: map-get($map: $colores, $key: 'uno');
+}
+
+#carrusel h5 {
+    @include texto(4rem, 700);
+    -webkit-text-stroke: 1px black;
+}
+
+#carrusel p {
+    @include texto(3rem, 700);
+    -webkit-text-stroke: 1px white;
+}
+
+#subtitulo {
+    font-family: $fontTitulos;
+    line-height: 1;
+    color: map-get($map: $colores, $key: 'uno');
+    @include texto(4rem, 700);
+}
